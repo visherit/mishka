@@ -1,10 +1,174 @@
+@import "blocks/main-nav.less";
 body{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+}
+.page-header{
 
-    background-color: black;
-    & .love{
+
+    &__wrapper{
+        padding: 0px 11%;
+
+    }
+    &__logo {
+    text-align: center;
+        position: relative;
+        padding-top: 20px;
+        margin-bottom: 15px;
+
+    }
+    &__mlink{
+        color:black;
+    }
+    .fa-bars{
+        position: absolute;
+        right: 0;
+    }
+
+    }
+
+.main-nav{
+    &__list{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    &__item{
+        font-weight: bold;
+        font-size: 17px;
+       text-align: center;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        border-top: 1px solid #ececec;
+    }
+    &__item:nth-child(3){
+
+        background-image: url(../img/menu-search.png);
+        background-repeat: no-repeat;
+        background-position:0% 50%;
+    }
+    &__item:nth-child(4){
+    background-image: url(../img/menu-cart.png);
+        background-repeat: no-repeat;
+        background-position:0% 50%;
+    }
+    &__link{
+
+    }
+}
+.main-preview{
+    &__wrapper{
+        padding: 0px 11%;
+    }
+    &__header{
+        margin: 0;
+        font-size: 27px;
+        text-align: center;
+        padding-top:75px;
+        padding-bottom:115px;
+        background-image: url(../img/hero-mobile.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+    }
+    &__item1,&__item2{
+
+        background-color:#63d1bb;
+        font-size: 19px;
+        font-weight: bold;
+        color: white;
+    }
+    &__item1{
+        background-image: url(../img/main-preview__item1png.png);
+        background-repeat: no-repeat;
+        background-position:89% 50% ;
+    }
+    &__item2{
+        background-color:#56c3b2;
+        background-image: url(../img/main-preview__item2.png);
+        background-repeat: no-repeat;
+        background-position:90% 50% ;
+
+    }
+    &__item1-text,&__item2-text{
+        margin: 0;
+        margin-left: 11%;
         width: 100px;
-        height: 100px;
-        background-color: aqua;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+}
+
+.bestin-week{
+    &__wrapper{
+            padding: 0px 11%;
+    }
+    &__item{
+        margin: 0;
+        font-size: 25px;
+        font-weight: bold;
+        padding-top: 25px;
+    }
+    &__header{
+        margin: 0;
+        font-size:17px;
+        font-weight: bold;
+        color:#82dac9;
+        text-transform: uppercase;
+        padding-top: 10px;
+    }
+    &__description{
+        margin: 0;
+        font-size:15px;
+        width:245px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+    }
+    &__char{
+    font-size: 15px;
+        width: 100%;
+        & tr{
+
+
+        }
+
+        & td{
+            padding-right: 20px;
+            border-bottom: 1px solid #ececec;
+
+        }
+
+    }
+    &__photo{
+        padding-top: 28px;
+        width: 100%;
+    }
+    &__count{
+        margin: 0;
+        text-align: center;
+        padding-top:25px;
+        padding-bottom: 25px;
+    }
+    &__btn{
+        display: inline-block;
+        text-align: center;
+        padding-top:20px;
+        padding-bottom: 20px;
+        text-decoration: none;
+        color:black;
+        width: 100%;
+        border: 2px solid black;
+        font-size:17px;
+        text-transform: uppercase;
+        font-weight: bold;
+
+
+
     }
 
 }
