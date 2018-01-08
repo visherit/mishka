@@ -1,3 +1,8 @@
+.clearfix .clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 body {
   padding: 0;
   margin: 0;
@@ -137,4 +142,169 @@ body {
   font-size: 17px;
   text-transform: uppercase;
   font-weight: bold;
+  margin-bottom: 30px;
+}
+.main-about {
+  margin-top: 30px;
+}
+.main-about__wrapper {
+  padding: 0px 11%;
+}
+.main-about__header {
+  margin: 0;
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+.main-about__img {
+  margin: 0;
+  margin-bottom: 20px;
+}
+.main-about__text {
+  margin: 0;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  width: 76%;
+}
+.main-reviews {
+  margin-top: 35px;
+}
+.main-reviews__wrapper {
+  padding: 0px 11%;
+}
+.main-reviews__header {
+  margin: 0;
+  font-size: 25px;
+}
+.main-reviews__review {
+  margin: 0;
+  font-size: 17px;
+  margin-top: 25px;
+}
+.main-reviews__author {
+  display: block;
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+.main-reviews__author-login {
+  margin: 0;
+  display: block;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.main-reviews__nav .clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.main-reviews__previous {
+  display: block;
+  font-size: 0;
+  width: 50%;
+  background-image: url(../img/main-review_arrowLeft.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  height: 50px;
+  float: left;
+}
+.main-reviews__next {
+  display: block;
+  font-size: 0;
+  width: 50%;
+  background-image: url(../img/main-review_arrowRight.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  height: 50px;
+  float: right;
+}
+.main-reviews__btn {
+  display: inline-block;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  border: 2px solid black;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.main-contacts {
+  margin-top: 30px;
+}
+.main-contacts__wrapper {
+  padding: 0px 11%;
+}
+.main-contacts__header {
+  margin: 0;
+  font-size: 18px;
+}
+.main-contacts__table {
+  margin-top: 30px;
+  font-size: 15px;
+}
+.main-contacts__mail-td:nth-child(1),
+.main-contacts__adress-td {
+  padding-right: 25px;
+}
+.main-contacts__adress-p {
+  margin: 0;
+  margin-top: 35px;
+  width: 150px;
+}
+.main-contacts__map {
+  display: block;
+  height: 457px;
+  background-image: url(../img/map-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-contacts__btn {
+  display: inline-block;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  border: 2px solid black;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.main-footer__wrapper {
+  padding: 0px 11%;
+}
+.footer-social {
+  display: inline-block;
+  text-align: center;
+  width: 101%;
+  height: 55px;
+  padding-top: 25px;
+  background-color: #f1f1f1;
+}
+.footer-social__fb {
+  margin-left: 16%;
+  margin-right: 16%;
+}
+.footer-copywrite__p {
+  display: inline-block;
+  width: 101%;
+  margin: 0;
+  font-size: 19px;
+  background-color: #f1f1f1;
+  font-weight: bold;
+  text-align: center;
+  height: 55px;
+  padding-top: 25px;
+  border-top: 1px solid lightgray;
 }

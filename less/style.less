@@ -1,4 +1,11 @@
 @import "blocks/main-nav.less";
+.clearfix{
+    .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+}
 body{
     padding: 0;
     margin: 0;
@@ -166,9 +173,183 @@ body{
         font-size:17px;
         text-transform: uppercase;
         font-weight: bold;
-
-
+        margin-bottom: 30px;
 
     }
 
+}
+
+.main-about{
+    margin-top: 30px;
+
+    &__wrapper{
+        padding: 0px 11%;
+    }
+     &__header{
+        margin: 0;
+        font-size: 25px;
+         margin-bottom: 25px;
+    }
+    &__img{
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    &__text{
+        margin: 0;
+    font-size:17px;
+    font-weight: bold;
+    margin-bottom: 20px;
+        width: 76%;
+    }
+}
+.main-reviews{
+    margin-top: 35px;
+    &__wrapper{
+        padding: 0px 11%;
+    }
+    &__header{
+    margin: 0;
+    font-size:25px;
+    }
+    &__review{
+        margin: 0;
+        font-size: 17px;
+        margin-top: 25px;
+    }
+    &__author{
+        display: block;
+        font-size:17px;
+        font-weight: bold;
+        margin-top:30px;
+    }
+    &__author-login
+    {
+        margin: 0;
+        display: block;
+        font-size:15px;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+    &__nav{
+        .clearfix;
+    }
+    &__previous{
+        display: block;
+        font-size:0;
+        width: 50%;
+        background-image: url(../img/main-review_arrowLeft.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50%;
+        height: 50px;
+        float: left;
+    }
+    &__next{
+        display: block;
+        font-size:0;
+        width: 50%;
+        background-image: url(../img/main-review_arrowRight.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50%;
+        height: 50px;
+        float: right;
+    }
+    &__btn{
+        display: inline-block;
+        text-align: center;
+        padding-top:20px;
+        padding-bottom: 20px;
+        text-decoration: none;
+        color:black;
+        width: 100%;
+        border: 2px solid black;
+        font-size:17px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+.main-contacts{
+    margin-top:30px;
+    &__wrapper{
+        padding: 0px 11%;
+    }
+    &__header{
+        margin: 0;
+        font-size: 18px;
+    }
+    &__table{
+        margin-top: 30px;
+        font-size: 15px;
+    }
+    &__mail{
+
+
+    }
+    &__mail-td:nth-child(1),&__adress-td{
+    padding-right:25px;
+    }
+    &__adress-p{
+        margin: 0;
+        margin-top:35px;
+        width: 150px
+
+    }
+    &__map{
+        display: block;
+        height: 457px;
+        background-image: url(../img/map-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &__btn{
+ display: inline-block;
+        text-align: center;
+        padding-top:20px;
+        padding-bottom: 20px;
+        text-decoration: none;
+        color:black;
+        width: 100%;
+        border: 2px solid black;
+        font-size:17px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: 30px;
+        margin-bottom: 30px
+    }
+}
+.main-footer{
+    &__wrapper{
+    padding: 0px 11%;
+    }
+}
+.footer-social{
+    display: inline-block;
+    text-align: center;
+    width: 101%;
+    height: 55px;
+    padding-top:25px;
+    background-color: #f1f1f1;
+
+    &__fb{
+        margin-left: 16%;
+        margin-right: 16%;
+
+    }
+}
+.footer-copywrite{
+    &__p{
+        display: inline-block;
+        width: 101%;
+        margin: 0;
+        font-size:19px;
+        background-color: #f1f1f1;
+        font-weight: bold;
+        text-align: center;
+        height: 55px;
+    padding-top:25px;
+        border-top: 1px solid lightgray;
+    }
 }
