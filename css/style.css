@@ -29,6 +29,14 @@ body {
   right: 0;
 }
 @media (min-width: 768px) {
+  .page-header::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    margin-top: -90px;
+    background-color: lightgray;
+  }
   .page-header__wrapper {
     padding: 0px 6%;
   }
@@ -71,7 +79,7 @@ body {
   .main-nav__item {
     padding: 0;
     border-top: none;
-    height: 90px;
+    height: 89px;
     display: flex;
     align-items: center;
   }
@@ -157,6 +165,56 @@ body {
   padding-top: 25px;
   padding-bottom: 25px;
 }
+@media (min-width: 768px) {
+  .main-preview {
+    background-color: #fafafa;
+  }
+  .main-preview::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 11px;
+    background-image: url(../img/main-previewzigzag.png);
+    background-repeat: repeat-x;
+    margin-top: -11px;
+  }
+  .main-preview br:nth-child(1) {
+    display: none;
+  }
+  .main-preview__wrapper {
+    padding: 0px 6%;
+  }
+  .main-preview__head {
+    height: 530px;
+    background-image: url(../img/hero-tablet.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .main-preview__header {
+    font-size: 43px;
+    padding: 0;
+    background-image: none;
+    padding-top: 50px;
+  }
+  .main-preview__footer {
+    padding: 0px 6%;
+    display: flex;
+    height: 120px;
+    position: relative;
+  }
+  .main-preview__item1,
+  .main-preview__item2 {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .main-preview__item1-text,
+  .main-preview__item2-text {
+    padding: 0;
+    font-size: 20px;
+  }
+}
 .bestin-week__wrapper {
   padding: 0px 11%;
 }
@@ -193,6 +251,9 @@ body {
   padding-top: 28px;
   width: 100%;
 }
+.bestin-week__photo-tablet {
+  display: none;
+}
 .bestin-week__count {
   margin: 0;
   text-align: center;
@@ -212,6 +273,73 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .bestin-week {
+    position: relative;
+  }
+  .bestin-week::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 16px;
+    background-image: url(../img/bestin-weekzig-zag.png);
+    background-repeat: repeat-x;
+    margin-top: -10px;
+  }
+  .bestin-week__wrapper {
+    padding: 0px 6%;
+  }
+  .bestin-week__head {
+    display: flex;
+    justify-content: space-between;
+  }
+  .bestin-week__item {
+    font-size: 43px;
+  }
+  .bestin-week__header {
+    font-size: 17px;
+    float: right;
+    align-self: flex-end;
+    width: 100px;
+    text-align: center;
+  }
+  .bestin-week__card {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  .bestin-week__photo {
+    display: none;
+  }
+  .bestin-week__photo-tablet {
+    display: block;
+    height: 400px;
+  }
+  .bestin-week__card-info {
+    width: 50%;
+  }
+  .bestin-week__description {
+    font-size: 20px;
+    width: 300px;
+    padding-top: 0;
+  }
+  .bestin-week__char {
+    width: 90%;
+    font-size: 20px;
+    border-spacing: 4px;
+  }
+  .bestin-week__count {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0;
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  .bestin-week__btn {
+    width: 90%;
+  }
 }
 .main-about {
   margin-top: 30px;

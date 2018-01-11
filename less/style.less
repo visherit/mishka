@@ -44,6 +44,16 @@ body{
     }
 @media(min-width:768px){
 	.page-header{
+        &::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            margin-top: -90px;
+
+            background-color:lightgray;
+
+        }
 		&__wrapper{
 		padding: 0px 6%;
 		}
@@ -98,12 +108,10 @@ body{
 		&__item{
 			padding: 0;
 			border-top: none;
-            height: 90px;
+            height: 89px;
             display: flex;
 
             align-items: center;
-
-
 
 		}
         &__item1{
@@ -156,18 +164,12 @@ background-image: url(../img/menu-search.png);
             font-weight: 100;
 
         }
-        &__link{
 
-
-
-        }
 
 	}
 
 }
-.main-nav__link{
 
-}
 
 .main-preview{
     &__wrapper{
@@ -213,6 +215,65 @@ background-image: url(../img/menu-search.png);
     }
 
 }
+@media(min-width:768px){
+    .main-preview{
+        background-color:#fafafa;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height:11px;
+
+            background-image: url(../img/main-previewzigzag.png);
+            background-repeat:repeat-x;
+            margin-top:-11px;
+
+        }
+        & br:nth-child(1){
+                display: none;
+            }
+        &__wrapper{
+        padding: 0px 6%;
+        }
+        &__head{
+        height: 530px;
+        background-image:url(../img/hero-tablet.png);
+        background-position: center;
+        background-repeat: no-repeat;
+
+        }
+        &__header{
+            font-size: 43px;
+            padding: 0;
+            background-image: none;
+            padding-top: 50px;
+
+        }
+        &__footer{
+            padding: 0px 6%;
+            display: flex;
+            height: 120px;
+            position: relative;
+        }
+
+        &__item1, &__item2{
+            width: 50%;
+            display:flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        &__item1-text,&__item2-text{
+            padding: 0;
+            font-size: 20px;
+
+
+
+
+        }
+
+    }
+}
 
 .bestin-week{
     &__wrapper{
@@ -252,12 +313,17 @@ background-image: url(../img/menu-search.png);
             padding-right: 20px;
             border-bottom: 1px solid #ececec;
 
+
         }
 
     }
+
     &__photo{
         padding-top: 28px;
         width: 100%;
+    }
+    &__photo-tablet{
+        display: none;
     }
     &__count{
         margin: 0;
@@ -278,6 +344,89 @@ background-image: url(../img/menu-search.png);
         text-transform: uppercase;
         font-weight: bold;
         margin-bottom: 30px;
+
+    }
+
+}
+@media(min-width:768px){
+    .bestin-week{
+
+        position: relative;
+        &::after{
+             content: "";
+            position: absolute;
+            width: 100%;
+            height:16px;
+            background-image: url(../img/bestin-weekzig-zag.png);
+            background-repeat:repeat-x;
+            margin-top: -10px;
+
+        }
+
+        &__wrapper{
+            padding: 0px 6%;
+    }
+        &__head{
+            display: flex;
+            justify-content: space-between;
+
+        }
+        &__item{
+            font-size:43px;
+
+        }
+        &__header{
+        font-size: 17px;
+            float: right;
+            align-self: flex-end;
+            width: 100px;
+            text-align: center;
+        }
+        &__card{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        margin-bottom: 50px;
+
+
+        }
+        &__photo{
+            display: none;
+        }
+        &__photo-tablet{
+            display: block;
+            height: 400px;
+
+        }
+        &__card-info{
+            width: 50%;
+        }
+        &__description{
+        font-size: 20px;
+            width: 300px;
+            padding-top: 0;
+        }
+
+        &__char{
+            width: 90%;
+            font-size: 20px;
+             border-spacing: 4px;
+
+
+        }
+        &__char tr{
+
+        }
+        &__count{
+        font-size: 20px;
+            font-weight: bold;
+            padding: 0;
+            padding-top:50px;
+            padding-bottom: 30px;
+        }
+        &__btn{
+        width: 90%;
+        }
 
     }
 
