@@ -75,12 +75,15 @@ body{
         background-repeat: no-repeat;
         background-position:0% 50%;
     }
-    &__item:nth-child(4){
+    &__item4{
     background-image: url(../img/menu-cart.png);
         background-repeat: no-repeat;
         background-position:0% 50%;
     }
     &__link{
+        text-decoration: none;
+        color: black;
+
 
     }
 }
@@ -89,48 +92,73 @@ body{
 		&__list{
 			display: flex;
             flex-wrap: wrap;
-            background-color:sandybrown;
+
 
 		}
 		&__item{
 			padding: 0;
 			border-top: none;
-            background-color: blue;
             height: 90px;
+            display: flex;
+
+            align-items: center;
 
 
 
 		}
         &__item1{
         order:1;
-        width: 49%;
-            background-color: darkolivegreen;
+        width: 46%;
+
             text-align: left;
+
         }
         &__item2{
         order:4;
-            background-color:skyblue;
+
             width: 23%;
             text-align: left;
         }
         &__item3{
         order:5;
-            background-color: yellow;
+
             width: 23%;
             text-align: left;
+
         }
         &__item4{
         order:2;
-            width: 12%;
-            background-color: aqua;
+            width: 11%;
+background-image: url(../img/menu-search.png);
             text-align: center;
+            border-left: 1px solid lightgray;
+            border-right: 1px solid lightgray;
+            font-size: 0;
+            background-position:50% 50%;
+
         }
         &__item5{
         order:3;
-            width: 39%;
+            width: 42%;
             text-align: right;
+            background-image: url(../img/menu-cart.png);
+            background-repeat: no-repeat;
+            background-position:20% 50%;
+            justify-content: flex-end;
+            margin-left: 0.5%;
+
+
+        }
+        &__item6{
+            order:6;
+            width: 54%;
+            justify-content: flex-end;
+            font-weight: 100;
+
         }
         &__link{
+
+
 
         }
 
