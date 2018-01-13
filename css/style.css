@@ -363,6 +363,27 @@ body {
   margin-bottom: 20px;
   width: 76%;
 }
+@media (min-width: 768px) {
+  .main-about {
+    padding-top: 60px;
+  }
+  .main-about__wrapper {
+    padding: 0px 6%;
+  }
+  .main-about__header {
+    font-size: 43px;
+  }
+  .main-about__cards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 425px;
+  }
+  .main-about__card {
+    height: 130px;
+    width: 320px;
+  }
+}
 .main-reviews {
   margin-top: 35px;
 }
@@ -433,6 +454,72 @@ body {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+@media (min-width: 768px) {
+  .main-reviews {
+    margin: 0;
+    background-image: url(../img/main-reviews__tablet.png);
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+    margin-bottom: 83px;
+  }
+  .main-reviews::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 16px;
+    background-image: url(../img/bestin-weekzig-zag.png);
+    background-repeat: repeat-x;
+    margin-top: 117px;
+  }
+  .main-reviews__wrapper {
+    padding: 0px 6%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .main-reviews__header {
+    padding: 0;
+    font-size: 43px;
+    order: 1;
+    margin-top: 70px;
+  }
+  .main-reviews__review {
+    order: 3;
+    margin: 0;
+    font-size: 17px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .main-reviews__autho-info {
+    order: 4;
+  }
+  .main-reviews__author {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .main-reviews__author-login {
+    margin: 0;
+  }
+  .main-reviews__nav {
+    order: 6;
+    width: 25%;
+  }
+  .main-reviews__previous {
+    width: 50%;
+  }
+  .main-reviews__next {
+    width: 50%;
+  }
+  .main-reviews__btn {
+    width: 167px;
+    order: 2;
+    margin: 0;
+    height: 10px;
+    padding-top: 12px;
+    margin-top: 70px;
+  }
+}
 .main-contacts {
   margin-top: 30px;
 }
@@ -442,6 +529,9 @@ body {
 .main-contacts__header {
   margin: 0;
   font-size: 18px;
+}
+.main-contacts__flag {
+  display: none;
 }
 .main-contacts__table {
   margin-top: 30px;
@@ -478,22 +568,65 @@ body {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+@media (min-width: 768px) {
+  .main-contacts {
+    padding-top: 55px;
+  }
+  .main-contacts__wrapper {
+    padding: 0px 6%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .main-contacts__header {
+    font-size: 43px;
+  }
+  .main-contacts__flag {
+    display: block;
+  }
+  .main-contacts__table {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 0;
+  }
+  .main-contacts__mail {
+    display: inline-block;
+  }
+  .main-contacts__adress {
+    display: inline-block;
+    margin-left: 55px;
+  }
+  .main-contacts__adress-p {
+    width: 200px;
+    font-size: 17px;
+  }
+  .main-contacts__map {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .main-contacts__btn {
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+}
 .main-footer__wrapper {
   padding: 0px 11%;
 }
-.footer-social {
+.main-footer__social {
   display: inline-block;
   text-align: center;
   width: 101%;
-  height: 55px;
+  padding-bottom: 25px;
   padding-top: 25px;
   background-color: #f1f1f1;
 }
-.footer-social__fb {
+.main-footer__social-fb {
   margin-left: 16%;
   margin-right: 16%;
 }
-.footer-copywrite__p {
+.main-footer__copywrite {
   display: inline-block;
   width: 101%;
   margin: 0;
@@ -504,4 +637,50 @@ body {
   height: 55px;
   padding-top: 25px;
   border-top: 1px solid lightgray;
+}
+.main-footer__copywrite-p {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+.main-footer__copywrite-logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+@media (min-width: 768px) {
+  .main-footer {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    background-color: #f1f1f1;
+  }
+  .main-footer__logo {
+    height: 34px;
+    width: 102px;
+  }
+  .main-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 6%;
+  }
+  .main-footer__copywrite {
+    display: block;
+    width: auto;
+    background-color: #f1f1f1;
+    margin: 0;
+    font-size: 19px;
+    font-weight: bold;
+    height: auto;
+    padding: 0;
+    border: 0;
+  }
+  .main-footer__social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 145px;
+    text-align: center;
+    margin-left: 25px;
+    padding: 0;
+    background-color: #f1f1f1;
+  }
 }
